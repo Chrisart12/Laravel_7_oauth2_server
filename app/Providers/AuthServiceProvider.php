@@ -34,6 +34,6 @@ class AuthServiceProvider extends ServiceProvider
             'view-user' => 'View user',
         ]);
 
-        Passport::tokensExpireIn(now()->addSeconds(10));
+        Passport::tokensExpireIn(now()->addSeconds(60));
     }
 }
